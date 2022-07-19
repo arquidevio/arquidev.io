@@ -65,7 +65,7 @@ theme = "raditian"
   googleTagManagerID = "GTM-000000" # Google Analytics works with Google Tag Manager
 
   [params.logo]
-    text1 = "Arquidev"
+    text1 = ""
     text2 = ""
 
   [params.footer]
