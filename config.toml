@@ -1,4 +1,5 @@
-baseURL = "https://arquidev.io/"
+#baseURL = "https://arquidev.io/"
+baseURL = "https://admirable-cheesecake-70f42b.netlify.app/"
 languageCode = "en-us"
 theme = "raditian"
 
