@@ -4,18 +4,6 @@ echo "Content-Type: text/html"
 echo ""
 
 firstString=$(cat ../index.htm)
-inject='
-<script type="text/javascript">
-  async function WaitForReload() {
-    var xmlHttp = new XMLHttpRequest();
-    xmlHttp.onreadystatechange = () => { 
-        if (xmlHttp.readyState == 4) { location.reload(); }
-    }
-    xmlHttp.open("GET", "/cgi-bin/reload.sh", true);
-    xmlHttp.send(null);
-  }
-  
-  WaitForReload();
-</script>'
+inject='<script type="text/javascript">fetch("/cgi-bin/reload.sh").then(() => location.reload());</script>'
 
 echo -e "${firstString/<\/title>/"</title>\n    $inject"}" 
