@@ -1,15 +1,22 @@
 /**
  * Custom theme
  */
- @import url("https://fonts.googleapis.com/css2?family=Albert+Sans:wght@200;400;600&family=Sen:wght@400;700&display=swap");
+ /* @import url("https://fonts.googleapis.com/css2?family=Albert+Sans:wght@200;400;600&family=Sen:wght@400;700&display=swap"); */
  :root {
    --font-family: "semplicitapro", sans-serif;
    --font-weight: 400;
-   --border-radius: 0;
+   
+
    --form-element-spacing-vertical: 1rem;
    --form-element-spacing-horizontal: 1.25rem;
+   
+   scroll-behavior: smooth;
+   height: 100%;
+   /* background-image: url("../img/back.jpg");
+   background-attachment: local;
+   background-size: cover;
+   background-blend-mode: normal; */
  }
-
 
 /*
 
@@ -35,23 +42,51 @@ hsl(107deg 14% 46%)
 
  @media only screen and (prefers-color-scheme: dark) {
     :root:not([data-theme=light]) {
-      color-scheme: dark;
-      --primary:#5091b9;
-      --primary-hover:hsl(203deg 43% 62%);
-      --primary-focus: hsl(203deg 43% 22%);
+      
+      --primary:hsl(182deg, 23%, 46%);
+      --primary-hover:hsl(182deg 33% 56%);
+      --primary-focus: hsl(182deg 33% 16%);;
 
-      test: hsl(218deg 25% 42%);
-      test: hsl(25deg 46% 54%);
-      test: hsl(203deg 43% 52%);
-      test: hsl(129deg 17% 20%);
-      test: hsl(10deg 50% 56%);
-      test: hsl(107deg 24% 46%);
+
     }
 }
 
-body>footer ul, body>footer ul li {
+body> section
+{
+  --border-radius: 0;
+}
+
+body> footer small {
   margin-bottom: 0;
   padding: 0;
   color: var(--muted-color);
   list-style: none;
+}
+
+body> article footer {
+  margin: 0 auto;
+}
+
+hgroup:after {
+  display: block;
+  max-width: 100px;
+  margin-top: 1rem;
+  border-bottom: 0.125rem solid var(--primary);
+  content: "";
+}
+
+footer a svg {
+  width: 2rem;
+}
+
+footer a {
+  margin-right: 1rem;
+}
+
+footer a:focus {
+  background-color: transparent;
+}
+
+footer a:hover {
+  text-decoration: none;
 }
