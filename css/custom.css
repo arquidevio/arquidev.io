@@ -115,8 +115,6 @@ footer a:hover {
 
   :root {
     font-size: larger
-    
- 
   }
 
   body> header {
@@ -140,8 +138,8 @@ footer a:hover {
     padding-bottom: 5.5rem;
     padding-right: var(--spacing);
     padding-left: var(--spacing);
-    background: rgba(17, 25, 31, 0.99);
-    transition: all 0.2s ease;
+    background: rgba(17, 25, 31, 1);
+    transition: opacity 0.2s ease;
     opacity: 1;
     overflow: hidden;
     position: absolute;
