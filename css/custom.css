@@ -10,8 +10,6 @@
    
    scroll-behavior: smooth;
    height: 100%;
-   scrollbar-width: 1px;
-   
 
  }
 
@@ -115,10 +113,10 @@ footer a:hover {
 
 @media screen and (max-width: 600px) {
 
-  body> header section nav ul li {
+  :root {
+    font-size: larger
     
-    font-size: 2.5rem;
-    font-weight: 400;
+ 
   }
 
   body> header {
@@ -138,16 +136,17 @@ footer a:hover {
   }
 
   aside.mobile> nav {
-    padding: 2rem;
+    padding-top: 2.5rem;
+    padding-bottom: 5.5rem;
+    padding-right: var(--spacing);
+    padding-left: var(--spacing);
     background: rgba(17, 25, 31, 0.99);
     transition: all 0.2s ease;
     opacity: 1;
     overflow: hidden;
     position: absolute;
     top: 0;
-    left: 0;
-    height: 55vh;
-    
+    left: 0;   
   }
 
   nav.mobile {
@@ -160,10 +159,8 @@ footer a:hover {
   }
 
   label.toggle {
-    text-align: center;
     display: inline-block;
     cursor: pointer;
-    padding: 0.5em 1em;
     font-size: 1rem;
     border-radius: 3px;
     user-select: none;
