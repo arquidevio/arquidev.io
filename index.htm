@@ -164,7 +164,7 @@
           Contact us.
         </p>
       </div>
-      <form class="container" method="POST" data-netlify="true">
+      <form class="container" method="POST" data-netlify="true" netlify-honeypot="unique-reference">
         <div class="grid">
 
           <label for="name">
@@ -177,13 +177,19 @@
             <small>We'll never share your email with anyone else.</small>
           </label>
 
+          <p class="super-important">
+            <label>
+              Unique reference: <input name="unique-reference" />
+            </label>
+          </p>
+
           <label for="message">
             Your message
             <textarea id="message" name="message" placeholder="Message" required></textarea>
           </label>
 
         </div>
-        <button type="submit">Submit</button>
+        <button type="submit">Send</button>
       </form>
     </section>
 
