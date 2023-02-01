@@ -232,9 +232,16 @@
 
 
 <script>
+
+var vh = window.innerHeight * 0.01;
+  document.body.style.setProperty('--vh', vh + 'px');
   window.addEventListener('scroll', () => {
   document.body.style.setProperty('--scroll', window.pageYOffset / (document.body.offsetHeight - window.innerHeight));
+
 }, false);
+
+
+
 </script>
 
 </body>

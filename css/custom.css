@@ -62,10 +62,11 @@ body>header {
   background-position: center center;
   background-position-y: calc(var(--scroll) * -100vh);
   /* border-bottom: 1px solid black; */
-  height: 100vh;
+  height:  100vh - calc(var(--scroll) * 100vh);
+  min-height: calc(var(--vh) * 100);
   overflow: hidden;
   padding-top: calc(var(--scroll) * 100vh);
-  min-height: fill-available;
+
 }
 
 
