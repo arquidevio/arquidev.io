@@ -62,7 +62,7 @@ body>header {
   background-position: center center;
   background-position-y: calc(var(--scroll) * -100vh);
   /* border-bottom: 1px solid black; */
-  height:  100vh - calc(var(--scroll) * 100vh);
+  height:  100vh;
   min-height: calc(var(--vh) * 100);
   overflow: hidden;
   padding-top: calc(var(--scroll) * 100vh);
@@ -142,8 +142,7 @@ footer a:hover {
   }
 
   aside.mobile>nav {
-    padding-top: 2.5rem;
-    padding-bottom: 5.5rem;
+    padding-top: 0.5rem;
     padding-right: var(--spacing);
     padding-left: var(--spacing);
     background: rgba(17, 25, 31, 1);
