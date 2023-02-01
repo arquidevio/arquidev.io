@@ -1,7 +1,7 @@
 /**
  * Custom theme
  */
-/* @import url("https://fonts.googleapis.com/css2?family=Albert+Sans:wght@200;400;600&family=Sen:wght@400;700&display=swap"); */
+
 :root {
   --font-family: "semplicitapro", sans-serif;
   --font-weight: 400;
@@ -16,17 +16,6 @@
 .mobile {
   display: none;
 }
-
-/*
-
-hsl(218deg 15% 42%)
-hsl(25deg 36% 54%)
-hsl(203deg 33% 52%)
-hsl(129deg 7% 20%)
-hsl(10deg 40% 56%)
-hsl(107deg 14% 46%)
-*/
-
 
 h1,
 h2,
