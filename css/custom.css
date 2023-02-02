@@ -31,10 +31,19 @@ h6 {
 @media only screen and (prefers-color-scheme: dark) {
   :root:not([data-theme=light]) {
 
-    --primary: hsl(182deg, 33%, 56%);
-    --primary-hover: hsl(182deg 43% 66%);
-    --primary-focus: hsl(182deg 43% 26%);
-    ;
+    --primary: hsl(182, 23%, 56%);
+    --primary-hover: hsl(182deg 33% 66%);
+    --primary-focus: hsl(182deg 33% 26%);
+    
+  }
+}
+
+@media only screen and (prefers-color-scheme: light) {
+  :root {
+
+    --primary: hsl(182, 23%, 56%);
+    --primary-hover: hsl(182deg 33% 66%);
+    --primary-focus: hsl(182deg 33% 26%);
   }
 }
 
@@ -43,19 +52,33 @@ body>section {
 }
 
 body>header {
-  background-image: url('/img/back-top.png'), linear-gradient(rgba(255, 255, 255,1),  rgba(255, 255, 255,0));
-  background-attachment: fixed;
+  background-image: url('/img/back-top.png'); /*, linear-gradient(rgba(255, 255, 255,1),  rgba(255, 255, 255,0));*/
+  background-attachment: scroll;
   background-size: cover;
-  background-blend-mode: multiply;
+  background-blend-mode: soft-light;
   background-repeat: no-repeat;
   background-position: center center;
-  background-position-y: calc(var(--scroll) * -100vh);
-  height: calc(var(--vh) * 100);
-  min-height: calc(var(--vh) * 100);
+  background-position-y: calc(var(--scroll) * 50vh);
+  height: 100hv;
+  min-height: 100vh;
+  min-height: -moz-available;
+  min-height: -webkit-fill-available;
+  min-height: fill-available;
   overflow: hidden;
-  padding-top: calc(var(--scroll) * 100vh);
 }
 
+#front {
+  text-align: right;
+  background: linear-gradient(rgba(0,0,0,0.0),  rgba(0,0,0,0.6)); 
+  z-index: 0;
+  position: relative; 
+  left: -1rem; 
+  width: 100vw;
+}
+
+#front> hgroup::after {
+  padding-top: 3rem;
+}
 
 body>footer small {
   margin-bottom: 0;
@@ -92,10 +115,6 @@ footer a:hover {
   text-decoration: none;
 }
 
-#front {
-  text-align: right;
-}
-
 .super-important {
   display: none;
 }
@@ -117,7 +136,8 @@ footer a:hover {
   }
 
   body>header {
-    background-image: url('/img/back-mobile.png'), linear-gradient(rgba(255, 255, 255,0),  rgba(0, 0, 0,1));
+    background-image: url('/img/back-mobile.png');
+    padding-bottom: 80%; 
   }
 
   aside.mobile input[type=checkbox].hide-input:checked+nav {
@@ -133,7 +153,7 @@ footer a:hover {
   }
 
   aside.mobile>nav {
-    padding-top: 0.5rem;
+    padding-top: 2.5rem;
     padding-right: var(--spacing);
     padding-left: var(--spacing);
     background: rgba(17, 25, 31, 1);
@@ -143,6 +163,7 @@ footer a:hover {
     position: absolute;
     top: 0;
     left: 0;
+    z-index: 10;
   }
 
   nav.mobile {

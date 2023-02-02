@@ -68,13 +68,13 @@
 
             </li>
             <li>
-              <h1><a href="#about">About</a></h1>
+              <h1><a href="#about" onclick="closeMobMenu()">About</a></h1>
             </li>
             <li>
-              <h1><a href="#technology">Technology</a></h1>
+              <h1><a href="#technology" onclick="closeMobMenu()">Technology</a></h1>
             </li>
             <li>
-              <h1><a href="#hire-me">Hire me</a></h1>
+              <h1><a href="#hire-me" onclick="closeMobMenu()">Hire me</a></h1>
             </li>
           </ul>
         </nav>
@@ -95,12 +95,12 @@
     <section id="front" class="container-fluid">
 
       <hgroup>
-        <h1 style="font-size: 3rem;">Let's build together</h1>
-        <h4>technical architecture /</h4>
+        <h1 style="font-size: 4rem;padding-bottom: 3rem;">Let's build<br />together</h1>
+        <h3>technical architecture /</h3>
 
-        <h4>research & development /</h4>
-        <h4>developer experience /</h4>
-        <h4></h4>
+        <h3>research & development /</h3>
+        <h3>developer experience /</h3>
+        <h3></h3>
       </hgroup>
     </section>
   </header>
@@ -251,21 +251,14 @@
 
   <script>
 
-    function calculateVh() {
-      var vh = window.innerHeight * 0.01;
-      document.body.style.setProperty('--vh', vh + 'px');
-    }
+    function closeMobMenu() { document.getElementById("mob-menu").checked = true; }
 
-    calculateVh();
-
-    window.addEventListener('resize', calculateVh);
-    window.addEventListener('orientationchange', calculateVh);
+    document.body.style.setProperty('--scroll', 0);
+    
 
     window.addEventListener('scroll', () => {
       document.body.style.setProperty('--scroll', window.pageYOffset / (document.body.offsetHeight - window.innerHeight));
     }, false);
-
-
 
   </script>
 
