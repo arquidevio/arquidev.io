@@ -34,6 +34,7 @@ h6 {
     --primary: hsl(182, 23%, 56%);
     --primary-hover: hsl(182deg 33% 66%);
     --primary-focus: hsl(182deg 33% 26%);
+    --muted-color: hsl(204, 10%, 60%);
     
   }
 }
@@ -44,6 +45,7 @@ h6 {
     --primary: hsl(182, 23%, 56%);
     --primary-hover: hsl(182deg 33% 66%);
     --primary-focus: hsl(182deg 33% 26%);
+    --muted-color: hsl(205deg, 10%, 60%);
   }
 }
 
