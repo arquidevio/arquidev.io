@@ -16,7 +16,6 @@
 
 <body>
 
-
   <header class="container-fluid">
 
     <section>
@@ -42,12 +41,10 @@
         </ul>
       </nav>
 
-
       <aside class="mobile">
         <input type="checkbox" checked id="mob-menu" class="hide-input">
         <nav class="container-fluid">
           <ul>
-
 
             <li>
               <div class="mob-menu-header">
@@ -62,44 +59,45 @@
                     </svg>
                   </label>
                 </a>
-
               </div>
 
-
             </li>
             <li>
-              <h1><a href="#about" onclick="closeMobMenu()">About</a></h1>
+              <h1><a href="#about" onclick="closeMobMenu()">about /</a></h1>
             </li>
             <li>
-              <h1><a href="#technology" onclick="closeMobMenu()">Technology</a></h1>
+              <h1><a href="#experience" onclick="closeMobMenu()">experience /</a></h1>
             </li>
             <li>
-              <h1><a href="#hire-me" onclick="closeMobMenu()">Hire me</a></h1>
+              <h1><a href="#hire-me" onclick="closeMobMenu()">hire me /</a></h1>
             </li>
           </ul>
         </nav>
       </aside>
 
-      <nav class="desktop">
-        <ul>
-          <li><img style="width: 6rem" src="/img/logo256.png" /></li>
-        </ul>
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#technology">Technology</a></li>
-          <li><a href="#hire-me">Hire me</a></li>
-        </ul>
-      </nav>
+      <aside class="desktop">
+
+        <nav class="container-fluid" style="display: inline-flex;">
+          <ul>
+            <li><img style="height: 7rem;" src="/img/logo256.png" /></li>
+          </ul>
+          <ul style="text-align: right; font-size: larger;">
+            <li><a href="#about">about /</a></li>
+            <li><a href="#experience">experience /</a></li>
+            <li><a href="#hire-me">hire me /</a></li>
+          </ul>
+        </nav>
+      </aside>
     </section>
 
-    <section id="front" class="container-fluid">
+    <section id="front" class="container">
 
       <hgroup>
         <h1 style="font-size: 4rem;padding-bottom: 3rem;">Let's build<br />together</h1>
-        <h3>technical architecture /</h3>
-
-        <h3>research & development /</h3>
+        <h3>bespoke software /</h3>
         <h3>developer experience /</h3>
+        <h3>research & development /</h3>
+        <h3>technical architecture /</h3>
         <h3></h3>
       </hgroup>
     </section>
@@ -117,9 +115,8 @@
 
         <p>
           <img style="height: 8rem; float: left; margin-right:2rem; shape-outside:circle();" src="img/me.png" />
-        <p>Welcome to Arquidev - my professional brand and, so far, a company of one. I'm Krzysztof
-          <a href="https://www.linkedin.com/in/kknet/">
-
+        <p>Welcome to Arquidev - my professional brand and, so far, a company of one.<br />I'm&nbsp;<a
+            href="https://www.linkedin.com/in/kknet/">Krzysztof
             <sup>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" focusable="false">
                 <path
@@ -127,7 +124,8 @@
                 </path>
               </svg></sup></a>, a seasoned software engineer and architect, currently based in Gdańsk.
 
-          I enjoy solving problems with technology. Especially, crafting tools that make other developers' lives easier.
+          I&nbsp;enjoy solving problems with technology. Especially, crafting tools that make other developers' lives
+          easier.
           I also occasionally post on my private blog at <a href="https://queil.net/">queil.net</a> and contribute to a
           few OSS projects as <a href="https://github.com/queil">queil</a>.
         </p>
@@ -135,23 +133,30 @@
       </div>
     </section>
 
-    <section id="technology">
+    <section id="experience">
       <div class="container">
         <hgroup>
-          <h1>Technology</h1>
-          <h3>Done right</h3>
+          <h1>Experience</h1>
+          <h3>You can trust</h3>
         </hgroup>
         <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae ea odio maiores. Hic nisi mollitia accusamus
-          error ipsam, neque esse adipisci reprehenderit repellendus doloremque. Ipsum rerum maiores nulla odio
-          necessitatibus.
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. A rerum cum tempore suscipit mollitia sit, quae
-          facere
-          placeat in ut consectetur dolore repellat ex accusantium natus necessitatibus, voluptas ab dolorum!
+          I've got a vast professional experience in software engineering, mostly in the finance domain:
+        <ul>
+          <li>technical architecture (.NET, small to medium scale)</li>
+          <li>design and implementation of back-end systems (C# & F#) (payment systems, decision engines,
+            domain-specific languages etc.)</li>
+          <li>DevOps: build engineering, CI/CD, containers, Kubernetes, observability, etc.</li>
+          <li>DevEx: software development workflows, custom SDKs, tooling, IDE extensions, etc.</li>
+          <li>apps & systems security</li>
+          <li>cloud/AWS</li>
+          <li>research & development</li>
+          <li>mentoring and training developers</li>
+          <li>working with legacy code</li>
+        </ul>
+
         </p>
       </div>
     </section>
-
 
     <section id="hire-me">
       <div class="container">
@@ -192,29 +197,11 @@
         <button type="submit">Send</button>
       </form>
     </section>
-
-
   </main>
 
-
-
-  <footer class="container">
-
-    <!-- <ul>
-              <li>&nbsp;</li>
-              <li>&nbsp;</li>
-              <li>&nbsp;</li>          
-              <li>&nbsp;</li>
-              <li><small>&copy; 2023 Arquidev</small></li>
-            </ul> -->
-    <!-- <ul style="text-align: right"> -->
-    <!-- <li><small>Arquidev Krzysztof Kraszewski</small></li>
-              <li><small>Olivia Gate, al. Grunwaldzka 472A</small></li>
-              <li><small>80-309 Gdańsk, Poland</small></li>
-              <li><small>Tax ID PL9661663682</small></li>
-              <li><small>Reg. No. 522571610</small></li> -->
-    <div class="grid">
-      <div>
+  <footer class="container-fluid">
+    <div class="container">
+      <section>
 
         <a href="https://github.com/arquidevio">
           <svg height="32" aria-hidden="true" viewBox="0 0 16 16" version="1.1" width="32">
@@ -237,29 +224,21 @@
             </path>
           </svg>
         </a>
-      </div>
+      </section>
 
-      <div style="text-align: right;">
+      <section>
         <small>© 2023, Arquidev. All Rights Reserved.</small>
-      </div>
+      </section>
 
     </div>
-    <!-- </ul> -->
-
   </footer>
 
-
   <script>
-
     function closeMobMenu() { document.getElementById("mob-menu").checked = true; }
-
     document.body.style.setProperty('--scroll', 0);
-    
-
     window.addEventListener('scroll', () => {
       document.body.style.setProperty('--scroll', window.pageYOffset / (document.body.offsetHeight - window.innerHeight));
     }, false);
-
   </script>
 
 </body>
