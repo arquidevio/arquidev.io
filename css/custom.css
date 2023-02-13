@@ -60,7 +60,7 @@ body>section {
 }
 
 body>header {
-  background-image: url('/img/back-top.png'); /*, linear-gradient(rgba(255, 255, 255,1),  rgba(255, 255, 255,0));*/
+  background-image: url('/img/back-top.webp'); /*, linear-gradient(rgba(255, 255, 255,1),  rgba(255, 255, 255,0));*/
   background-attachment: scroll;
   background-size: cover;
   background-blend-mode: soft-light;
