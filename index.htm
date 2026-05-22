@@ -139,24 +139,37 @@
       <div class="container">
         <hgroup>
           <h1>Experience</h1>
-          <h3>You can trust</h3>
+          <h3>~17 years. Mostly finance.</h3>
         </hgroup>
         <p>
-          I've got a vast professional experience in software engineering, mostly in the finance domain:
-        <ul>
-          <li>technical architecture (startup to scale-up)</li>
-          <li>design and implementation of back-end systems (C# & F#) (payment systems, decision engines,
-            domain-specific languages etc.)</li>
-          <li>DevOps: build engineering, CI/CD, containers, Kubernetes, observability, etc.</li>
-          <li>DevEx: software development workflows, custom SDKs, tooling, IDE extensions, etc.</li>
-          <li>apps & systems security</li>
-          <li>cloud: AWS, Azure</li>
-          <li>research & development</li>
-          <li>mentoring and training developers</li>
-          <li>working with legacy code</li>
-        </ul>
-
+          Software engineering rooted in the finance domain — payment systems, decision engines, DSLs, and the DevOps to run them:
         </p>
+        <ul>
+          <li>
+            <strong>Architect &amp; build</strong>
+            <ul>
+              <li>technical architecture (.NET, startup to scale-up)</li>
+              <li>back-end systems (C#/F#): payment systems, decision engines, domain-specific languages</li>
+            </ul>
+          </li>
+          <li>
+            <strong>Make it scale</strong>
+            <ul>
+              <li>build engineering, CI/CD, containers, Kubernetes, observability</li>
+              <li>apps &amp; systems security</li>
+              <li>cloud: AWS, Azure</li>
+            </ul>
+          </li>
+          <li>
+            <strong>Make it last</strong>
+            <ul>
+              <li>legacy rescue</li>
+              <li>DevEx: software development workflows, custom SDKs, tooling, IDE extensions</li>
+              <li>mentoring and training developers</li>
+              <li>research &amp; development</li>
+            </ul>
+          </li>
+        </ul>
       </div>
     </section>
 
@@ -229,7 +242,7 @@
       </section>
 
       <section>
-        <small>© 2023, Arquidev. All Rights Reserved.</small>
+        <small>© <span id="footer-year"></span>, Arquidev. All Rights Reserved.</small>
       </section>
 
     </div>
@@ -237,6 +250,7 @@
 
   <script>
     function closeMobMenu() { document.getElementById("mob-menu").checked = true; }
+    document.getElementById('footer-year').textContent = new Date().getFullYear();
     document.body.style.setProperty('--scroll', 0);
     window.addEventListener('scroll', () => {
       document.body.style.setProperty('--scroll', window.pageYOffset / (document.body.offsetHeight - window.innerHeight));
