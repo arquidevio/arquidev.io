@@ -61,6 +61,10 @@ body>section {
   --border-radius: 0;
 }
 
+#about .container {
+  display: flow-root;
+}
+
 body>header {
   background-image: url('/img/back-top.webp'); /*, linear-gradient(rgba(255, 255, 255,1),  rgba(255, 255, 255,0));*/
   background-attachment: scroll;
@@ -201,6 +205,10 @@ footer a:hover {
 
   nav.mobile {
     padding-bottom: 1.7rem;
+  }
+
+  #works .grid article:nth-of-type(2) {
+    order: -1;
   }
 
   input.hide-input {
